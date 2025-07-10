@@ -17,5 +17,14 @@ export default defineNuxtConfig({
       // ... or scan all composables within given directory
       '~/composables/**'
     ]
+  },
+  modules: ['@nuxt/ui'],
+  css: ['~/assets/css/main.css'],
+  ui: {
+    fonts: false,
+    // colorMode: false,
+    // theme: {
+    //   colors: ['primary', 'error']
+    // }
   }
 })
