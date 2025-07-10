@@ -1,14 +1,10 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
-export default defineNuxtConfig({
-  compatibilityDate: '2025-05-15',
-  devtools: { enabled: true },
-  components: [
-    {
-      path: '~/components',
-      pathPrefix: false,
-    },
-  ],
-  imports: {
+# Nuxt Composables
+放自定义Hook
+
+需要在 `nuxt.config.ts` 配置
+
+```
+imports: {
     dirs: [
       // Scan top-level composables
       '~/composables',
@@ -18,4 +14,4 @@ export default defineNuxtConfig({
       '~/composables/**'
     ]
   }
-})
+```
